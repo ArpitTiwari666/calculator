@@ -1,0 +1,97 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@font-face {
+    font-family: 'Technology';
+    src: url('Technology.ttf') format('truetype');
+}
+.box{
+    background-color: black;
+    height: auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 450px;
+    max-width: 95vw;
+    border-radius: 40px;
+
+}
+.key{
+  
+    padding: 20px;
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    gap: 7px;
+    
+   
+}
+.key button {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 90px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-size: 35px;
+    color: white;
+    border: 1px solid rgb(104, 101, 101);
+    background: radial-gradient(circle,#000000 0%,#191919 40%,#323232 75%,#d9d7d7 100%);
+}
+#equal{
+background: linear-gradient(to bottom,rgb(208, 171, 184), rgb(255, 0, 76));
+
+}
+.key button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 25px rgb(254, 246, 232) ;
+}
+
+#mini-box{
+    
+    height: 120px;
+    width: 87%;
+    border-radius: 25px;
+    margin: 6% auto 0;  
+    border: 3px solid white;
+    opacity: 0.4;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    font-family: 'Technology', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
+    color: white;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-right: 10px;
+    
+    box-sizing: border-box;
+    font-size: clamp(40px, 12vw, 100px);
+   
+    
+}
+@media (max-width: 500px) {
+    .box{
+        width: 95vw;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .key button{
+        width: 100%;
+        aspect-ratio: 1;
+        font-size: 28px;
+    }
+
+    #mini-box{
+        font-size: 60px;
+    }
+}
